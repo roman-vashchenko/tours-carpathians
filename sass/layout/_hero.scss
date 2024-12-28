@@ -1,0 +1,18 @@
+.hero {
+  background: url("/images/hero/hero-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/hero/hero-hero-2x.jpg");
+  }
+}
+
+.hero-title {
+  color: $light-color;
+  font-size: 40px;
+  font-weight: inherit;
+}
+
+.hero-container {
+  padding-top: 188px;
+}

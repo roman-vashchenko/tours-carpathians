@@ -11,33 +11,53 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Document</title>
+    <title>Carpathians</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon/mountain.png" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="">
-          <svg width="40" height="40">
-            <use href="./images/icons.svg#logo"></use>
-          </svg>
-        </a>
-        <button class="btn-menu" type="button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-          >
-            <path
-              d="M6 12H34M6 20H34M6 27H34"
-              stroke="#F7FBFB"
-              stroke-width="3"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-            />
-          </svg>
-        </button>
+        <nav class="navigation">
+          <a href="">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
+          </a>
+          <button class="btn-open-menu" type="button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M6 12H34M6 20H34M6 27H34"
+                stroke="#F7FBFB"
+                stroke-width="3"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#about">About us</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="">Tours</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="">Reviews</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="">Gallery</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="mob-menu">
         <div class="mob-menu-container">
@@ -119,6 +139,26 @@
         </div>
       </section>
     </main>
-    <div class="backdrop-menu"></div>
+    <div class="backdrop-menu">
+      <div class="backdrop-menu-container">
+        <button class="btn-close-menu" type="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+          >
+            <path
+              d="M30 30L10 10M30 10L10 30"
+              stroke="#F7FBFB"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
   </body>
 </html>

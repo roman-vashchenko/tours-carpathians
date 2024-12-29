@@ -7,11 +7,21 @@
   background-color: rgba(32, 35, 33, 0.7);
   z-index: 555;
   overflow: scroll;
+  @media screen and (min-width: 768px) {
+    padding: 24px 163px 0px 82px;
+  }
 }
 
 .mob-menu-logo {
   display: inline-block;
   margin-bottom: 72px;
+}
+
+.mob-menu-logo svg {
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .mob-menu-list {
@@ -20,6 +30,9 @@
   gap: 30px;
   margin-bottom: 64px;
   color: $light-color;
+  @media screen and (min-width: 768px) {
+    gap: 40px;
+  }
 }
 
 .mob-menu-list-item link {
@@ -31,6 +44,9 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .backdrop-menu {
@@ -46,5 +62,25 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url("/images/hero/hero-hero-2x.jpg");
+  }
+}
+
+.backdrop-menu-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 21px 32px 0 32px;
+}
+
+.btn-close-menu {
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.btn-close-menu svg {
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 60px;
   }
 }

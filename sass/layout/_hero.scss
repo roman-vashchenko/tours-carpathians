@@ -1,5 +1,8 @@
 .hero {
+  min-height: 788px;
   background: url("/images/hero/hero-mob-1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -7,12 +10,40 @@
   }
 }
 
+.hero-container {
+  padding-top: 188px;
+  padding-bottom: 193px;
+}
+
 .hero-title {
+  margin-bottom: 60px;
   color: $light-color;
+  text-align: center;
   font-size: 40px;
   font-weight: inherit;
 }
 
-.hero-container {
-  padding-top: 188px;
+.hero-text {
+  margin-bottom: 88px;
+  color: $light-color;
+  text-align: center;
+  font-weight: 500;
+}
+
+.hero-btn {
+  display: block;
+  width: 285px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: $main-color;
+  border-color: transparent;
+  color: $light-color;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: $primaty-text;
 }

@@ -1,6 +1,6 @@
 .header {
-  height: 140px;
-  background-color: $secondary-text;
+  position: absolute;
+  width: 100%;
 }
 
 .header-container {
@@ -12,4 +12,5 @@
 .btn-menu {
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }

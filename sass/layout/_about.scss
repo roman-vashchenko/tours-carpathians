@@ -1,18 +1,34 @@
-.about-container {
-  padding-top: 52px;
-  padding-bottom: 52px;
+.about {
+  margin-top: 52px;
+  margin-bottom: 52px;
+  @media screen and (min-width: 768px) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 }
 
 .about-title {
   margin-bottom: 28px;
-  color: $primaty-text;
+  color: $primary-text;
   text-align: center;
   font-size: 32px;
   font-weight: inherit;
+  @media screen and (min-width: 768px) {
+    font-size: 52px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 68px;
+  }
 }
 
 .about-text {
   color: $secondary-text;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
 }
 
 .first-text {

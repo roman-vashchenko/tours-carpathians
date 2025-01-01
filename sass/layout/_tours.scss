@@ -1,0 +1,45 @@
+.tours-title {
+  margin-bottom: 28px;
+  color: $primary-text;
+  text-align: center;
+  font-size: 32px;
+  font-weight: inherit;
+}
+
+.tours-list-item {
+  border: 1px solid $main-color;
+}
+
+.tours-description {
+  padding: 28px 20px;
+}
+
+.tours-subtitle {
+  margin-bottom: 16px;
+  color: $primary-text;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tours-price {
+  margin-bottom: 20px;
+  color: $secondary-text;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tours-btn {
+  min-width: 271px;
+  padding: 10px;
+  color: $light-color;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: $main-color;
+  border-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tours-btn:hover,
+.tours-btn:focus {
+  background-color: $primary-text;
+}

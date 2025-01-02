@@ -11,6 +11,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Carpathians</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon/mountain.png" />
   </head>
@@ -47,7 +51,7 @@
               <a class="header-menu-item-link" href="#about">About us</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-item-link" href="">Tours</a>
+              <a class="header-menu-item-link" href="#tours">Tours</a>
             </li>
             <li class="header-menu-item">
               <a class="header-menu-item-link" href="">Reviews</a>
@@ -76,7 +80,7 @@
               <a href="#about">About us</a>
             </li>
             <li class="mob-menu-list-item">
-              <a href="">Тours</a>
+              <a href="#tours">Тours</a>
             </li>
             <li class="mob-menu-list-item">
               <a href="">Reviews</a>
@@ -195,25 +199,67 @@
 
       <!-- TOURS -->
 
-      <section class="tours">
+      <section id="tours" class="tours">
         <div class="container tours-container">
           <h2 class="tours-title">Upcoming tours</h2>
-          <ul class="tours-list">
-            <li class="tours-list-item">
-              <img
-                class="tours-img"
-                src="./images/tours/tours1-mob-1x.jpg"
-                alt="Ascent to Hoverla"
-                width="311"
-                height="338"
-              />
-              <div class="tours-description">
-                <h3 class="tours-subtitle">Ascent to Hoverla</h3>
-                <p class="tours-price">From UAH 4,499/person</p>
-                <button type="button" class="tours-btn">MORE DETAILS</button>
-              </div>
-            </li>
-          </ul>
+          <div class="swiper">
+            <ul class="tours-list swiper-wrapper">
+              <li class="tours-list-item swiper-slide">
+                <img
+                  class="tours-img"
+                  src="./images/tours/tours1-mob-1x.jpg"
+                  alt="Ascent to Hoverla"
+                  width="311"
+                  height="338"
+                />
+                <div class="tours-description">
+                  <h3 class="tours-subtitle">Ascent to Hoverla</h3>
+                  <p class="tours-price">From UAH 4,499/person</p>
+                  <button type="button" class="tours-btn">MORE DETAILS</button>
+                </div>
+              </li>
+              <li class="tours-list-item swiper-slide">
+                <img
+                  class="tours-img"
+                  src="./images/tours/tours2-mob-1x.jpg"
+                  alt="Ski tour to Bukovel"
+                  width="311"
+                  height="338"
+                />
+                <div class="tours-description">
+                  <h3 class="tours-subtitle">Ski tour to Bukovel</h3>
+                  <p class="tours-price">From UAH 7,499/person</p>
+                  <button type="button" class="tours-btn">MORE DETAILS</button>
+                </div>
+              </li>
+              <li class="tours-list-item swiper-slide">
+                <img
+                  class="tours-img"
+                  src="./images/tours/tours3-mob-1x.jpg"
+                  alt="Week in Carpathians"
+                  width="311"
+                  height="338"
+                />
+                <div class="tours-description">
+                  <h3 class="tours-subtitle">Week in Carpathians</h3>
+                  <p class="tours-price">From UAH 9,999/person</p>
+                  <button type="button" class="tours-btn">MORE DETAILS</button>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <button class="swiper-button-next" type="button">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#next"></use>
+              </svg>
+            </button>
+            <button class="swiper-button-prev" type="button">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#prev"></use>
+              </svg>
+            </button> -->
+          </div>
         </div>
       </section>
     </main>
@@ -241,5 +287,7 @@
         </button>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

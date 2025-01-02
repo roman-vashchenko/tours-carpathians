@@ -4,6 +4,21 @@
   text-align: center;
   font-size: 32px;
   font-weight: inherit;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    font-size: 52px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 40px;
+    font-size: 68px;
+  }
+}
+
+.tours-list {
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 37px;
+  }
 }
 
 .tours-list-item {
@@ -12,6 +27,9 @@
 
 .tours-description {
   padding: 28px 20px;
+  @media screen and (min-width: 768px) {
+    padding: 48px 20px;
+  }
 }
 
 .tours-subtitle {
@@ -19,6 +37,12 @@
   color: $primary-text;
   font-size: 20px;
   font-weight: 600;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 28px;
+  }
 }
 
 .tours-price {
@@ -26,10 +50,17 @@
   color: $secondary-text;
   font-size: 16px;
   font-weight: 600;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 36px;
+    font-size: 24px;
+  }
 }
 
 .tours-btn {
-  min-width: 271px;
+  width: 100%;
   padding: 10px;
   color: $light-color;
   font-weight: 500;
@@ -37,6 +68,12 @@
   background-color: $main-color;
   border-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
 }
 
 .tours-btn:hover,

@@ -54,10 +54,10 @@
               <a class="header-menu-item-link" href="#tours">Tours</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-item-link" href="">Reviews</a>
+              <a class="header-menu-item-link" href="#reviews">Reviews</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-item-link" href="">Gallery</a>
+              <a class="header-menu-item-link" href="#gallery">Gallery</a>
             </li>
             <li class="header-menu-item">
               <a class="header-menu-item-link" href="">Contacts</a>
@@ -83,10 +83,10 @@
               <a href="#tours">Тours</a>
             </li>
             <li class="mob-menu-list-item">
-              <a href="">Reviews</a>
+              <a href="#reviews">Reviews</a>
             </li>
             <li class="mob-menu-list-item">
-              <a href="">Gallery</a>
+              <a href="#gallery">Gallery</a>
             </li>
             <li class="mob-menu-list-item">
               <a href="">Contacts</a>
@@ -197,12 +197,12 @@
         </div>
       </section>
 
-      <!-- TOURS -->
+      <!-- UPCOMING TOURS -->
 
       <section id="tours" class="tours">
         <div class="container tours-container">
           <h2 class="tours-title">Upcoming tours</h2>
-          <div class="swiper">
+          <div class="swiper swiper-tours">
             <ul class="tours-list swiper-wrapper">
               <li class="tours-list-item swiper-slide">
                 <img
@@ -248,18 +248,375 @@
               </li>
             </ul>
             <div class="swiper-pagination"></div>
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
-            <!-- <button class="swiper-button-next" type="button">
-              <svg width="40" height="40">
-                <use href="./images/icons.svg#next"></use>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+
+      <section id="reviews" class="reviews">
+        <div class="container reviews-container">
+          <h2 class="reviews-title">Reviews</h2>
+          <ul class="reviews-list">
+            <li class="reviews-list-item">
+              <div class="reviews-list-item-bg"></div>
+              <img
+                class="reviews-list-item-avatar"
+                src="/images/reviews/maria-mob-1x.jpg"
+                alt="Maria"
+                width="100"
+                height="100"
+              />
+              <div class="reviews-list-item-wrapper">
+                <p class="reviews-list-item-name">Maria</p>
+                <p class="reviews-list-item-comment">
+                  It was really cool! We saw everything - sun, snow, rain, fog!
+                  It's very exciting and interesting, you won't regret it - it's
+                  worth going and seeing everything with your own eyes.
+                  Everything is organized at the highest level.
+                </p>
+              </div>
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#round"></use>
               </svg>
-            </button>
-            <button class="swiper-button-prev" type="button">
-              <svg width="40" height="40">
-                <use href="./images/icons.svg#prev"></use>
+            </li>
+            <li class="reviews-list-item">
+              <div class="reviews-list-item-bg"></div>
+              <img
+                class="reviews-list-item-avatar"
+                src="/images/reviews/ostap-mob-1x.jpg"
+                alt="Ostap"
+                width="100"
+                height="100"
+              />
+              <div class="reviews-list-item-wrapper">
+                <p class="reviews-list-item-name">Ostap</p>
+                <p class="reviews-list-item-comment">
+                  Good organization, everything went smoothly. Friendly guide
+                  Taras told interesting facts about the area and customs
+                  throughout the tour.
+                </p>
+              </div>
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#round"></use>
               </svg>
-            </button> -->
+            </li>
+            <li class="reviews-list-item last-card">
+              <div class="reviews-list-item-bg"></div>
+              <img
+                class="reviews-list-item-avatar"
+                src="/images/reviews/anita-mob-1x.jpg"
+                alt="Ostap"
+                width="100"
+                height="100"
+              />
+              <div class="reviews-list-item-wrapper">
+                <p class="reviews-list-item-name">Anita</p>
+                <p class="reviews-list-item-comment">
+                  Who is going to the mountains for the first time - this is
+                  exactly the tour and the people who organize everything. Guide
+                  Makar is interesting stories, selection of a route for a
+                  comfortable ascent, motivation and support.
+                </p>
+              </div>
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#round"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+
+      <section id="gallery" class="gallery">
+        <div class="container gallery-container">
+          <h2 class="gallery-title">Gallery</h2>
+          <div class="swiper swiper-gallery">
+            <ul class="gallery-list swiper-wrapper">
+              <li class="gallery-list-item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/gallery/desk/photo1-desk-1x.jpg 1x,
+                      ./images/gallery/desk/photo1-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/tab/photo1-tab-1x.jpg 1x,
+                      ./images/gallery/tab/photo1-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/mob/photo1-mob-1x.jpg 1x,
+                      ./images/gallery/mob/photo1-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                </picture>
+                <img
+                  src="/images/gallery/desk/photo1-desk-1x.jpg"
+                  alt="Mountains"
+                  width="575"
+                />
+              </li>
+              <li class="gallery-list-item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/gallery/desk/photo2-desk-1x.jpg 1x,
+                      ./images/gallery/desk/photo2-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/tab/photo2-tab-1x.jpg 1x,
+                      ./images/gallery/tab/photo2-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/mob/photo2-mob-1x.jpg 1x,
+                      ./images/gallery/mob/photo2-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                </picture>
+                <img
+                  src="/images/gallery/desk/photo2-desk-1x.jpg"
+                  alt="Mountains"
+                  width="575"
+                />
+              </li>
+              <li class="gallery-list-item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/gallery/desk/photo3-desk-1x.jpg 1x,
+                      ./images/gallery/desk/photo3-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/tab/photo3-tab-1x.jpg 1x,
+                      ./images/gallery/tab/photo3-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/mob/photo3-mob-1x.jpg 1x,
+                      ./images/gallery/mob/photo3-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                </picture>
+                <img
+                  src="/images/gallery/desk/photo3-desk-1x.jpg"
+                  alt="Mountains"
+                  width="575"
+                />
+              </li>
+              <li class="gallery-list-item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/gallery/desk/photo4-desk-1x.jpg 1x,
+                      ./images/gallery/desk/photo4-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/tab/photo4-tab-1x.jpg 1x,
+                      ./images/gallery/tab/photo4-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/mob/photo4-mob-1x.jpg 1x,
+                      ./images/gallery/mob/photo4-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                </picture>
+                <img
+                  src="/images/gallery/desk/photo4-desk-1x.jpg"
+                  alt="Mountains"
+                  width="575"
+                />
+              </li>
+              <li class="gallery-list-item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/gallery/desk/photo5-desk-1x.jpg 1x,
+                      ./images/gallery/desk/photo5-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/tab/photo5-tab-1x.jpg 1x,
+                      ./images/gallery/tab/photo5-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/mob/photo5-mob-1x.jpg 1x,
+                      ./images/gallery/mob/photo5-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                </picture>
+                <img
+                  src="/images/gallery/desk/photo5-desk-1x.jpg"
+                  alt="Mountains"
+                  width="575"
+                />
+              </li>
+              <li class="gallery-list-item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/gallery/desk/photo6-desk-1x.jpg 1x,
+                      ./images/gallery/desk/photo6-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/tab/photo6-tab-1x.jpg 1x,
+                      ./images/gallery/tab/photo6-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/mob/photo6-mob-1x.jpg 1x,
+                      ./images/gallery/mob/photo6-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                </picture>
+                <img
+                  src="/images/gallery/desk/photo6-desk-1x.jpg"
+                  alt="Mountains"
+                  width="575"
+                />
+              </li>
+              <li class="gallery-list-item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/gallery/desk/photo7-desk-1x.jpg 1x,
+                      ./images/gallery/desk/photo1-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/tab/photo7-tab-1x.jpg 1x,
+                      ./images/gallery/tab/photo7-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/mob/photo7-mob-1x.jpg 1x,
+                      ./images/gallery/mob/photo7-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                </picture>
+                <img
+                  src="/images/gallery/desk/photo7-desk-1x.jpg"
+                  alt="Mountains"
+                  width="575"
+                />
+              </li>
+              <li class="gallery-list-item swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/gallery/desk/photo8-desk-1x.jpg 1x,
+                      ./images/gallery/desk/photo8-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/tab/photo8-tab-1x.jpg 1x,
+                      ./images/gallery/tab/photo8-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/mob/photo8-mob-1x.jpg 1x,
+                      ./images/gallery/mob/photo8-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                </picture>
+                <img
+                  src="/images/gallery/desk/photo8-desk-1x.jpg"
+                  alt="Mountains"
+                  width="575"
+                />
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUESTIONS -->
+
+      <section class="questions">
+        <div class="container questions-container">
+          <div class="questions-wrapper">
+            <h1 class="questions-title">Do you have any questions?</h1>
+            <p class="questions-text">
+              You can leave your questions here and our manager will call you
+              back within 10 minutes
+            </p>
+            <form class="form">
+              <input
+                type="text"
+                class="form-field"
+                name="name"
+                placeholder="Your name*"
+                required
+                pattern="[A-Za-z\s]+"
+                title="Only letters and spaces are allowed"
+              />
+              <input
+                type="tel"
+                class="form-field"
+                name="phone-number"
+                placeholder="Phone number*"
+                required
+                pattern="\+?\d{10,15}"
+                title="Enter a valid phone number, e.g., +380500000111"
+              />
+              <input
+                type="text"
+                class="form-field"
+                name="questions"
+                placeholder="What would you like to know?"
+              />
+              <button class="form-btn" type="submit">CALL ME</button>
+            </form>
           </div>
         </div>
       </section>

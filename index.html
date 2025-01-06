@@ -24,12 +24,12 @@
     <header class="header">
       <div class="container header-container">
         <nav class="navigation">
-          <a href="">
+          <a href="" class="logo-mobile">
             <svg width="40" height="40">
               <use href="./images/icons.svg#logo"></use>
             </svg>
           </a>
-          <button class="btn-open-menu" type="button">
+          <button class="btn-open-menu js-btn-open-menu" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -43,6 +43,23 @@
                 stroke-width="3"
                 stroke-miterlimit="10"
                 stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <button class="btn-close-menu js-btn-close-menu" type="button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M30 30L10 10M30 10L10 30"
+                stroke="#F7FBFB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               />
             </svg>
           </button>
@@ -68,54 +85,52 @@
 
       <!-- MOBILE MENU -->
 
-      <div class="mob-menu">
-        <div class="mob-menu-container">
-          <a href="" class="mob-menu-logo">
-            <svg width="40" height="40">
-              <use href="./images/icons.svg#logo"></use>
-            </svg>
-          </a>
-          <ul class="mob-menu-list">
-            <li class="mob-menu-list-item">
-              <a href="#about">About us</a>
-            </li>
-            <li class="mob-menu-list-item">
-              <a href="#tours">Тours</a>
-            </li>
-            <li class="mob-menu-list-item">
-              <a href="#reviews">Reviews</a>
-            </li>
-            <li class="mob-menu-list-item">
-              <a href="#gallery">Gallery</a>
-            </li>
-            <li class="mob-menu-list-item">
-              <a href="#contacts">Contacts</a>
-            </li>
-          </ul>
-          <ul class="mob-menu-soc-list">
-            <li>
-              <a href="">
-                <svg width="40" height="40" fill="#f7fbfb">
-                  <use href="./images/icons.svg#telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg width="40" height="40">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg width="40" height="40">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="mob-menu js-mob-menu">
+        <a href="" class="mob-menu-logo">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#logo"></use>
+          </svg>
+        </a>
+        <ul class="mob-menu-list">
+          <li class="mob-menu-list-item">
+            <a href="#about">About us</a>
+          </li>
+          <li class="mob-menu-list-item">
+            <a href="#tours">Тours</a>
+          </li>
+          <li class="mob-menu-list-item">
+            <a href="#reviews">Reviews</a>
+          </li>
+          <li class="mob-menu-list-item">
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li class="mob-menu-list-item">
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+        <ul class="mob-menu-soc-list">
+          <li>
+            <a href="">
+              <svg width="40" height="40" fill="#f7fbfb">
+                <use href="./images/icons.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>

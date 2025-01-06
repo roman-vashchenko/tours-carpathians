@@ -1,15 +1,21 @@
-.mob-menu-container {
-  display: none;
+.mob-menu {
   position: fixed;
   top: 0;
-  height: 100%;
-  padding: 25px 74px 117px 32px;
-  background-color: rgba(32, 35, 33, 0.7);
-  z-index: 555;
+  left: 0;
+  height: 100vh;
   overflow: scroll;
+  transform: translateX(-100%);
+  z-index: 555;
+  background-color: rgba(32, 35, 33, 0.7);
+  padding: 25px 74px 117px 32px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
     padding: 24px 163px 0px 82px;
   }
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
 }
 
 .mob-menu-logo {
@@ -72,6 +78,7 @@
 }
 
 .btn-close-menu {
+  display: none;
   padding: 0;
   background-color: transparent;
   border-color: transparent;

@@ -94,6 +94,11 @@
 .form-field {
   border: none;
   border-bottom: 1px solid #a3a5a3;
+  outline: none;
+}
+
+.form-field:focus {
+  border-bottom: 1px solid $main-color;
 }
 
 .form-btn {

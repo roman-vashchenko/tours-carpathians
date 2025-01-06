@@ -61,6 +61,12 @@ img {
   font-weight: 100 900;
   font-style: italic;
 }
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -968,6 +974,11 @@ body {
 .form-field {
   border: none;
   border-bottom: 1px solid #a3a5a3;
+  outline: none;
+}
+
+.form-field:focus {
+  border-bottom: 1px solid #5b86a1;
 }
 
 .form-btn {
@@ -986,4 +997,114 @@ body {
   .form-btn {
     gap: 25px;
   }
+}
+
+.footer {
+  background-color: #202321;
+  color: #f7fbfb;
+}
+
+.footer-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    width: 580px;
+    padding: 64px 0 64px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    width: 785px;
+    padding: 60px 0 50px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-title {
+  margin-bottom: 28px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .footer-title {
+    font-style: 32px;
+  }
+}
+
+.footer-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 23px;
+}
+@media screen and (min-width: 768px) {
+  .footer-location {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-location svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.footer-list-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .footer-list-contact {
+    font-size: 18px;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-list-contact svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.footer-list-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+@media screen and (min-width: 1440px) {
+  .footer-list-contact-item {
+    gap: 8px;
+  }
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 190px;
+  margin: 0 auto;
+  color: #a3a5a3;
+  font-family: Manrope;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */

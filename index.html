@@ -294,11 +294,27 @@
               <svg width="32" height="32">
                 <use href="./images/icons.svg#round"></use>
               </svg>
-              <img
-                class="reviews-img"
-                src="./images/reviews/reviews-maria-mob-1x.jpg"
-                alt="Maria"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/reviews/reviews-maria-tab-1x.jpg 1x,
+                    ./images/reviews/reviews-maria-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /images/reviews/reviews-maria-mob-1x.jpg 1x,
+                    /images/reviews/reviews-maria-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="reviews-img"
+                  src="./images/reviews/reviews-maria-mob-1x.jpg"
+                  alt="Maria"
+                />
+              </picture>
             </li>
             <li class="reviews-list-item">
               <div class="reviews-list-item-bg"></div>
@@ -320,11 +336,27 @@
               <svg width="32" height="32">
                 <use href="./images/icons.svg#round"></use>
               </svg>
-              <img
-                class="reviews-img"
-                src="./images/reviews/reviews-ostap-mob-1x.jpg"
-                alt="Maria"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/reviews/reviews-ostap-tab-1x.jpg 1x,
+                    ./images/reviews/reviews-ostap-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /images/reviews/reviews-ostap-mob-1x.jpg 1x,
+                    /images/reviews/reviews-ostap-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="reviews-img"
+                  src="./images/reviews/reviews-ostap-mob-1x.jpg"
+                  alt="Ostap"
+                />
+              </picture>
             </li>
             <li class="reviews-list-item last-card">
               <div class="reviews-list-item-bg"></div>
@@ -347,6 +379,20 @@
               <svg width="32" height="32">
                 <use href="./images/icons.svg#round"></use>
               </svg>
+              <picture>
+                <source
+                  srcset="
+                    ./images/reviews/reviews-anita-desk-1x.jpg 1x,
+                    ./images/reviews/reviews-anita-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="reviews-img"
+                  src="./images/reviews/reviews-ostap-mob-1x.jpg"
+                  alt="Anita"
+                />
+              </picture>
             </li>
           </ul>
         </div>

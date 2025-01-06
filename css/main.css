@@ -140,6 +140,15 @@ body {
   border-color: transparent;
   cursor: pointer;
 }
+@media screen and (min-width: 1440px) {
+  .btn-open-menu {
+    display: none;
+  }
+}
+
+.btn-open-menu.is-hidden {
+  display: none;
+}
 
 .header-menu {
   display: none;
@@ -195,6 +204,11 @@ body {
 @media screen and (min-width: 768px) {
   .mob-menu {
     padding: 24px 163px 0px 82px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .mob-menu {
+    display: none;
   }
 }
 
@@ -272,12 +286,21 @@ body {
   border-color: transparent;
   cursor: pointer;
 }
+@media screen and (min-width: 1440px) {
+  .btn-close-menu {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .btn-close-menu svg {
     width: 60px;
     height: 60px;
   }
+}
+
+.btn-close-menu.is-active {
+  display: block;
 }
 
 .hero {

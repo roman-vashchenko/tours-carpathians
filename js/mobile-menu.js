@@ -8,36 +8,40 @@ const refs = {
 
 refs.openMenu.addEventListener("click", () => {
   refs.menu.classList.add("is-open");
-  refs.openMenu.style.display = "none";
+  refs.openMenu.classList.add("is-hidden");
   refs.logoMobile.style.opacity = "0";
-  refs.closeMenu.style.display = "block";
+  refs.closeMenu.classList.add("is-active");
   document.body.style.overflow = "hidden";
 });
 
 refs.closeMenu.addEventListener("click", () => {
   refs.menu.classList.remove("is-open");
-  refs.closeMenu.style.display = "none";
+  refs.closeMenu.classList.remove("is-active");
   refs.logoMobile.style.opacity = "1";
-  refs.openMenu.style.display = "block";
+  refs.openMenu.classList.remove("is-hidden");
   document.body.style.overflow = "";
 });
 
 refs.menuLinks.forEach((link) => {
   link.addEventListener("click", () => {
     refs.menu.classList.remove("is-open");
+    refs.closeMenu.classList.remove("is-active");
+    refs.openMenu.classList.remove("is-hidden");
     refs.logoMobile.style.opacity = "1";
     document.body.style.overflow = "";
   });
 });
 
-function applyStylesOnResize() {
+function resizeWindowControl() {
   if (window.innerWidth >= 1440) {
-    refs.openMenu.style.display = "none";
-  } else {
-    refs.openMenu.style.display = "block";
+    refs.openMenu.classList.remove("is-hidden");
+    refs.closeMenu.classList.remove("is-active");
+    refs.menu.classList.remove("is-open");
+    refs.logoMobile.style.opacity = "1";
+    document.body.style.overflow = "";
   }
 }
 
-applyStylesOnResize();
+window.addEventListener("resize", resizeWindowControl);
 
-window.addEventListener("resize", applyStylesOnResize);
+resizeWindovControl();

@@ -1014,6 +1014,7 @@ body {
   border: none;
   border-bottom: 1px solid #a3a5a3;
   outline: none;
+  background-color: #f7fbfb;
 }
 
 .form-field:focus {

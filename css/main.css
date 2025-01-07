@@ -715,11 +715,6 @@ body {
     width: calc((100% - 20px) / 2);
   }
 }
-@media screen and (min-width: 1440px) {
-  .reviews-list-item {
-    cursor: pointer;
-  }
-}
 
 .reviews-list-item.last-card {
   display: none;

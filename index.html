@@ -143,7 +143,9 @@
             Journeys to the very heart of the Carpathians for those who want a
             real reboot
           </p>
-          <button class="hero-btn" type="button">BOOK A TOUR</button>
+          <button class="hero-btn js-open-modal-book-tour" type="button">
+            BOOK A TOUR
+          </button>
         </div>
       </section>
       <section class="about">
@@ -220,13 +222,37 @@
           <div class="swiper swiper-tours">
             <ul class="tours-list swiper-wrapper">
               <li class="tours-list-item swiper-slide">
-                <img
-                  class="tours-img"
-                  src="./images/tours/tours1-mob-1x.jpg"
-                  alt="Ascent to Hoverla"
-                  width="311"
-                  height="338"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/tours/tours1-desk-1x.jpg 1x,
+                      ./images/tours/tours1-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tours/tours1-tab-1x.jpg 1x,
+                      ./images/tours/tours1-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tours/tours1-mob-1x.jpg 1x,
+                      ./images/tours/tours1-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="tours-img"
+                    src="./images/tours/tours1-mob-1x.jpg"
+                    alt="Ascent to Hoverla"
+                    width="311"
+                    height="338"
+                  />
+                </picture>
+
                 <div class="tours-description">
                   <h3 class="tours-subtitle">Ascent to Hoverla</h3>
                   <p class="tours-price">From UAH 4,499/person</p>
@@ -234,13 +260,36 @@
                 </div>
               </li>
               <li class="tours-list-item swiper-slide">
-                <img
-                  class="tours-img"
-                  src="./images/tours/tours2-mob-1x.jpg"
-                  alt="Ski tour to Bukovel"
-                  width="311"
-                  height="338"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/tours/tours2-desk-1x.jpg 1x,
+                      ./images/tours/tours2-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tours/tours2-tab-1x.jpg 1x,
+                      ./images/tours/tours2-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tours/tours2-mob-1x.jpg 1x,
+                      ./images/tours/tours2-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="tours-img"
+                    src="./images/tours/tours2-mob-1x.jpg"
+                    alt="Ski tour to Bukovel"
+                    width="311"
+                    height="338"
+                  />
+                </picture>
                 <div class="tours-description">
                   <h3 class="tours-subtitle">Ski tour to Bukovel</h3>
                   <p class="tours-price">From UAH 7,499/person</p>
@@ -248,13 +297,36 @@
                 </div>
               </li>
               <li class="tours-list-item swiper-slide">
-                <img
-                  class="tours-img"
-                  src="./images/tours/tours3-mob-1x.jpg"
-                  alt="Week in Carpathians"
-                  width="311"
-                  height="338"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/tours/tours3-desk-1x.jpg 1x,
+                      ./images/tours/tours3-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tours/tours3-tab-1x.jpg 1x,
+                      ./images/tours/tours3-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tours/tours3-mob-1x.jpg 1x,
+                      ./images/tours/tours3-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="tours-img"
+                    src="./images/tours/tours3-mob-1x.jpg"
+                    alt="Week in Carpathians"
+                    width="311"
+                    height="338"
+                  />
+                </picture>
                 <div class="tours-description">
                   <h3 class="tours-subtitle">Week in Carpathians</h3>
                   <p class="tours-price">From UAH 9,999/person</p>
@@ -777,29 +849,147 @@
 
     <!-- BACKDROP MENU -->
 
-    <div class="backdrop-menu">
-      <div class="backdrop-menu-container">
-        <button class="btn-close-menu" type="button">
+    <div class="backdrop is-hidden js-backdrop-modal-book-tour">
+      <div class="modal-book-tour">
+        <button
+          class="modal-book-tour-btn js-close-modal-book-tour"
+          type="button"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
             fill="none"
           >
             <path
-              d="M30 30L10 10M30 10L10 30"
-              stroke="#F7FBFB"
+              d="M22.5 22.5L7.5 7.5M22.5 7.5L7.5 22.5"
+              stroke="#202321"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
           </svg>
         </button>
+        <h2 class="modal-book-tour-title">Book a tour</h2>
+        <p class="modal-book-tour-text">
+          You can leave your application here and our manager will call you
+          within 10 minutes
+        </p>
+        <form class="modal-book-tour-form">
+          <input
+            type="text"
+            class="form-field"
+            name="name"
+            placeholder="Your name*"
+            required
+            pattern="[A-Za-z\s]+"
+            title="Only letters and spaces are allowed"
+          />
+          <input
+            type="tel"
+            class="form-field"
+            name="phone-number"
+            placeholder="Phone number*"
+            required
+            pattern="\+?\d{10,15}"
+            title="Enter a valid phone number, e.g., +380500000111"
+          />
+          <div>
+            <input
+              class="checkbox"
+              id="ascent-to-hoverla"
+              type="checkbox"
+              name="tour"
+              value="Ascent to Hoverla"
+              checked
+            />
+            <label for="ascent-to-hoverla">
+              <span class="border-icon">
+                <svg
+                  class="icon-check"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.25 5L7.5 15L3.75 11.25"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              Ascent to Hoverla
+            </label>
+          </div>
+          <div>
+            <input
+              class="checkbox"
+              id="ski-tour-to-bukovel"
+              type="checkbox"
+              name="tour"
+              value="Ski tour to Bukovel"
+            />
+            <label for="ski-tour-to-bukovel">
+              <span class="border-icon">
+                <svg
+                  class="icon-check"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.25 5L7.5 15L3.75 11.25"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              Ski tour to Bukovel
+            </label>
+          </div>
+          <div>
+            <input
+              class="checkbox"
+              id="week-in-carpathians"
+              type="checkbox"
+              name="tour"
+              value="Week in Carpathians"
+            />
+            <label for="week-in-carpathians">
+              <span class="border-icon">
+                <svg
+                  class="icon-check"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.25 5L7.5 15L3.75 11.25"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              Week in Carpathians
+            </label>
+          </div>
+          <button type="submit" class="form-btn">CALL ME</button>
+        </form>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-book-tour.js"></script>
     <script src="./js/swiper.js"></script>
   </body>
 </html>

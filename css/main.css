@@ -1120,4 +1120,126 @@ body {
   color: #a3a5a3;
   font-family: Manrope;
   font-size: 16px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 35, 33, 0.7);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-book-tour {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 359px;
+  padding: 52px 32px 36px;
+  background-color: #f7fbfb;
+}
+@media screen and (min-width: 768px) {
+  .modal-book-tour {
+    width: 478px;
+    padding: 60px 52px 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .modal-book-tour {
+    width: 774px;
+    padding: 100px 100px 60px;
+  }
+}
+
+.modal-book-tour-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.modal-book-tour-title {
+  margin-bottom: 20px;
+  color: #1b1d1b;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .modal-book-tour-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .modal-book-tour-title {
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+}
+
+.modal-book-tour-text {
+  margin-bottom: 24px;
+  color: v #202321;
+  text-align: center;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .modal-book-tour-text {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .modal-book-tour-text {
+    font-size: 24px;
+  }
+}
+
+.modal-book-tour-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.modal-book-tour-form label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.border-icon {
+  position: relative;
+  top: 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #202321;
+}
+
+.icon-check {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + label .icon-check {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

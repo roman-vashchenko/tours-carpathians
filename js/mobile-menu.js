@@ -44,4 +44,4 @@ function resizeWindowControl() {
 
 window.addEventListener("resize", resizeWindowControl);
 
-resizeWindovControl();
+resizeWindowControl();

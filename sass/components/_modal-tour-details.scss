@@ -6,6 +6,9 @@
 .modal-details-tour-hoverla {
   position: fixed;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   opacity: 1;
@@ -51,6 +54,10 @@
   background: url("/images/modal-tour-details/hoverla/mob/hoverla3-mob-1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.modal-details-tour-hoverla {
+  background-color: $light-color;
 }
 
 .modal-details-tour-hoverla-list-item-day {

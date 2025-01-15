@@ -1,17 +1,17 @@
 const refs = {
-  modal: document.querySelector(".js-modal-details-tour-hoverla"),
-  openModal: document.querySelector(".js-tours-btn"),
+  modalHoverla: document.querySelector(".js-modal-details-tour-hoverla"),
+  openModal: document.querySelector(".js-tours-btn-hoverla"),
   closeModal: document.querySelector(
     ".js-modal-details-tour-hoverla-close-btn"
   ),
 };
 
 refs.openModal.addEventListener("click", () => {
-  refs.modal.classList.remove("is-hidden");
+  refs.modalHoverla.classList.remove("is-hidden");
   document.body.style.overflow = "hidden";
 });
 
 refs.closeModal.addEventListener("click", () => {
-  refs.modal.classList.add("is-hidden");
+  refs.modalHoverla.classList.add("is-hidden");
   document.body.style.overflow = "";
 });

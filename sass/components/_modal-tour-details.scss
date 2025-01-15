@@ -91,10 +91,12 @@
   width: 100%;
   display: block;
   padding: 10px;
+  text-align: center;
   background-color: $main-color;
   border-color: transparent;
   color: $light-color;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .modal-details-tour-hoverla-btn {

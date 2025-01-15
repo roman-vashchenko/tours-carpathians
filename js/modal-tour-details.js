@@ -4,6 +4,7 @@ const refs = {
   closeModalHoverla: document.querySelector(
     ".js-modal-details-tour-hoverla-close-btn"
   ),
+  bookTourHoverla: document.querySelector(".js-modal-details-book-tour-btn"),
   // modalBukovel: document.querySelector(".js-modal-details-tour-bukovel"),
   // openModalBukovel: document.querySelector(".js-tours-btn-bukovel"),
   // closeModalBukovel: document.querySelector(
@@ -24,6 +25,11 @@ refs.openModalHoverla.addEventListener("click", () => {
 });
 
 refs.closeModalHoverla.addEventListener("click", () => {
+  refs.modalHoverla.classList.add("is-hidden");
+  document.body.style.overflow = "";
+});
+
+refs.bookTourHoverla.addEventListener("click", () => {
   refs.modalHoverla.classList.add("is-hidden");
   document.body.style.overflow = "";
 });

@@ -1346,10 +1346,12 @@ body {
   width: 100%;
   display: block;
   padding: 10px;
+  text-align: center;
   background-color: #5b86a1;
   border-color: transparent;
   color: #f7fbfb;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .modal-details-tour-hoverla-btn {

@@ -1,0 +1,112 @@
+.modal-details-tour-hoverla.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-details-tour-hoverla {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 555;
+  overflow: auto;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-details-tour-hoverla-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 111;
+}
+
+.modal-details-tour-hoverla-list {
+  color: $light-color;
+  font-weight: 500;
+  min-height: 100%;
+}
+
+.modal-details-tour-hoverla-list-item {
+  width: 100%;
+  position: relative;
+  padding: 150px 37px 20px 48px;
+  min-height: 480px;
+}
+
+.modal-details-tour-hoverla-list-item:nth-child(1) {
+  background: url("/images/modal-tour-details/hoverla/mob/hoverla1-mob-1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-details-tour-hoverla-list-item:nth-child(2) {
+  background: url("/images/modal-tour-details/hoverla/mob/hoverla2-mob-1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-details-tour-hoverla-list-item:nth-child(3) {
+  background: url("/images/modal-tour-details/hoverla/mob/hoverla3-mob-1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-details-tour-hoverla-list-item-day {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  padding: 14px 190px 14px 48px;
+  background-color: $main-color;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.modal-details-tour-hoverla-sublist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-details-tour-hoverla-wrapper {
+  background-color: $light-color;
+  padding: 28px 15px;
+}
+
+.modal-details-tour-hoverla-price {
+  margin-bottom: 16px;
+  color: $secondary-text;
+  text-align: center;
+  font-weight: 600;
+}
+
+.modal-details-tour-hoverla-btn {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  background-color: $main-color;
+  border-color: transparent;
+  color: $light-color;
+  font-weight: 500;
+}
+
+.modal-details-tour-hoverla-btn {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-details-tour-hoverla-btn:hover,
+.modal-details-tour-hoverla-btn:focus {
+  background-color: $primary-text;
+}
+
+.swiper-pagination-details .swiper-pagination-bullet {
+  background-color: #a3a5a3 !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.swiper-pagination-details .swiper-pagination-bullet-active {
+  background-color: $light-color !important;
+  width: 12px !important;
+  height: 12px !important;
+}

@@ -31,3 +31,11 @@ const swiperGallery = new Swiper(".swiper-gallery", {
     },
   },
 });
+
+const swiperTourDetails = new Swiper(".swiper-tour-details", {
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination-details",
+    dynamicBullets: true,
+  },
+});

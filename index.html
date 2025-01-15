@@ -256,7 +256,9 @@
                 <div class="tours-description">
                   <h3 class="tours-subtitle">Ascent to Hoverla</h3>
                   <p class="tours-price">From UAH 4,499/person</p>
-                  <button type="button" class="tours-btn">MORE DETAILS</button>
+                  <button type="button" class="tours-btn js-tours-btn">
+                    MORE DETAILS
+                  </button>
                 </div>
               </li>
               <li class="tours-list-item swiper-slide">
@@ -847,7 +849,7 @@
       </div>
     </footer>
 
-    <!-- BACKDROP MENU -->
+    <!-- BACKDROP MODAL -->
 
     <div class="backdrop is-hidden js-backdrop-modal-book-tour">
       <div class="modal-book-tour">
@@ -987,9 +989,109 @@
         </form>
       </div>
     </div>
+
+    <!-- TOUR'S DETAILS MODAL -->
+
+    <div
+      class="modal-details-tour-hoverla is-hidden js-modal-details-tour-hoverla"
+    >
+      <button
+        type="button"
+        class="modal-details-tour-hoverla-close-btn js-modal-details-tour-hoverla-close-btn"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 40 40"
+          fill="none"
+        >
+          <path
+            d="M30 30L10 10M30 10L10 30"
+            stroke="#F7FBFB"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <div class="swiper swiper-tour-details">
+        <ul class="modal-details-tour-hoverla-list swiper-wrapper">
+          <li class="modal-details-tour-hoverla-list-item swiper-slide">
+            <h2 class="visually-hidden">Ascent to Hoverla</h2>
+            <span class="modal-details-tour-hoverla-list-item-day">1 day</span>
+            <ul class="modal-details-tour-hoverla-sublist">
+              <li class="modal-details-tour-hoverla-sublist-item">
+                Departure from Lviv
+              </li>
+              <li class="modal-details-tour-hoverla-sublist-item">
+                Manyava Hermitage
+              </li>
+              <li class="modal-details-tour-hoverla-sublist-item">
+                Manyava waterfall
+              </li>
+              <li class="modal-details-tour-hoverla-sublist-item">
+                Arrival to Bukovel
+              </li>
+              <li class="modal-details-tour-hoverla-sublist-item">Check-in</li>
+              <li class="modal-details-tour-hoverla-sublist-item">Dinner</li>
+              <li class="modal-details-tour-hoverla-sublist-item">
+                Evening by the fireplace
+              </li>
+            </ul>
+          </li>
+
+          <li class="modal-details-tour-hoverla-list-item swiper-slide">
+            <h2 class="visually-hidden">Ascent to Hoverla</h2>
+            <span class="modal-details-tour-hoverla-list-item-day">2 day</span>
+            <ul class="modal-details-tour-hoverla-sublist">
+              <li class="modal-details-tour-hoverla-sublist-item">Breakfast</li>
+              <li class="modal-details-tour-hoverla-sublist-item">
+                Ascent to Hoverla
+              </li>
+              <li class="modal-details-tour-hoverla-sublist-item">Dinner</li>
+              <li class="modal-details-tour-hoverla-sublist-item">
+                Reacretion
+              </li>
+              <li class="modal-details-tour-hoverla-sublist-item">Sauna</li>
+              <li class="modal-details-tour-hoverla-sublist-item">Dinner</li>
+            </ul>
+          </li>
+
+          <li class="modal-details-tour-hoverla-list-item swiper-slide">
+            <h2 class="visually-hidden">Ascent to Hoverla</h2>
+            <span class="modal-details-tour-hoverla-list-item-day">3 day</span>
+            <ul class="modal-details-tour-hoverla-sublist">
+              <li class="modal-details-tour-hoverla-sublist-item">Breakfast</li>
+              <li class="modal-details-tour-hoverla-sublist-item">
+                A walk around Bukovel
+              </li>
+              <li class="modal-details-tour-hoverla-sublist-item">
+                Check out from the hotel
+              </li>
+              <li class="modal-details-tour-hoverla-sublist-item">Yaremche</li>
+              <li class="modal-details-tour-hoverla-sublist-item">
+                Arrival in Lviv
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="swiper-pagination swiper-pagination-details"></div>
+      </div>
+      <div class="modal-details-tour-hoverla-wrapper">
+        <p class="modal-details-tour-hoverla-price">UAH 4,499/person</p>
+        <button
+          type="button"
+          class="modal-details-tour-hoverla-btn js-modal-details-tour-hoverla-btn"
+        >
+          BOOK A TOUR
+        </button>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal-book-tour.js"></script>
-    <script src="./js/swiper.js"></script>
+    <script src="./js/swiper.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/modal-book-tour.js" type="module"></script>
+    <script src="./js/modal-tour-details.js" type="module"></script>
   </body>
 </html>

@@ -1,17 +1,29 @@
 const refs = {
   modalHoverla: document.querySelector(".js-modal-details-tour-hoverla"),
-  openModal: document.querySelector(".js-tours-btn-hoverla"),
-  closeModal: document.querySelector(
+  openModalHoverla: document.querySelector(".js-tours-btn-hoverla"),
+  closeModalHoverla: document.querySelector(
     ".js-modal-details-tour-hoverla-close-btn"
   ),
+  // modalBukovel: document.querySelector(".js-modal-details-tour-bukovel"),
+  // openModalBukovel: document.querySelector(".js-tours-btn-bukovel"),
+  // closeModalBukovel: document.querySelector(
+  //   ".js-modal-details-tour-bukovel-close-btn"
+  // ),
+  // modalCarpathians: document.querySelector(".js-modal-details-tour-carpathians"),
+  // openModalCarpathians: document.querySelector(".js-tours-btn-carpathians"),
+  // closeModalCarpathians: document.querySelector(
+  //   ".js-modal-details-tour-carpathians-close-btn"
+  // ),
+
+  // ),
 };
 
-refs.openModal.addEventListener("click", () => {
+refs.openModalHoverla.addEventListener("click", () => {
   refs.modalHoverla.classList.remove("is-hidden");
   document.body.style.overflow = "hidden";
 });
 
-refs.closeModal.addEventListener("click", () => {
+refs.closeModalHoverla.addEventListener("click", () => {
   refs.modalHoverla.classList.add("is-hidden");
   document.body.style.overflow = "";
 });

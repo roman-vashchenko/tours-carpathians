@@ -1,9 +1,13 @@
-.modal-details-tour-hoverla.is-hidden {
+.modal-details-tour-hoverla.is-hidden,
+.modal-details-tour-bukovel.is-hidden,
+.modal-details-tour-carpathians.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.modal-details-tour-hoverla {
+.modal-details-tour-hoverla,
+.modal-details-tour-bukovel,
+.modal-details-tour-carpathians {
   position: fixed;
   top: 0;
   display: flex;
@@ -17,7 +21,9 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-details-tour-hoverla-close-btn {
+.modal-details-tour-hoverla-close-btn,
+.modal-details-tour-bukovel-close-btn,
+.modal-details-tour-carpathians-close-btn {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -27,13 +33,17 @@
   z-index: 111;
 }
 
-.modal-details-tour-hoverla-list {
+.modal-details-tour-hoverla-list,
+.modal-details-tour-bukovel-list,
+.modal-details-tour-carpathians-list {
   color: $light-color;
   font-weight: 500;
   min-height: 100%;
 }
 
-.modal-details-tour-hoverla-list-item {
+.modal-details-tour-hoverla-list-item,
+.modal-details-tour-bukovel-list-item,
+.modal-details-tour-carpathians-list-item {
   width: 100%;
   position: relative;
   padding: 150px 37px 20px 48px;
@@ -42,25 +52,161 @@
 
 .modal-details-tour-hoverla-list-item:nth-child(1) {
   background: url("/images/modal-tour-details/hoverla/mob/hoverla1-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/hoverla/mob/hoverla1-mob-2x.jpg");
+  }
   background-repeat: no-repeat;
   background-size: cover;
 }
 .modal-details-tour-hoverla-list-item:nth-child(2) {
   background: url("/images/modal-tour-details/hoverla/mob/hoverla2-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/hoverla/mob/hoverla2-mob-2x.jpg");
+  }
   background-repeat: no-repeat;
   background-size: cover;
 }
 .modal-details-tour-hoverla-list-item:nth-child(3) {
   background: url("/images/modal-tour-details/hoverla/mob/hoverla3-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/hoverla/mob/hoverla3-mob-2x.jpg");
+  }
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.modal-details-tour-hoverla {
+.modal-details-tour-bukovel-list-item:nth-child(1) {
+  background: url("/images/modal-tour-details/bukovel/mob/bukovel1-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/bukovel/mob/bukovel1-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-details-tour-bukovel-list-item:nth-child(2) {
+  background: url("/images/modal-tour-details/bukovel/mob/bukovel2-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/bukovel/mob/bukovel2-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-details-tour-bukovel-list-item:nth-child(3) {
+  background: url("/images/modal-tour-details/bukovel/mob/bukovel3-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/bukovel/mob/bukovel3-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-details-tour-bukovel-list-item:nth-child(4) {
+  background: url("/images/modal-tour-details/bukovel/mob/bukovel4-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/bukovel/mob/bukovel4-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-details-tour-carpathians-list-item:nth-child(1) {
+  background: url("/images/modal-tour-details/carpathians/mob/carpathians1-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/carpathians/mob/carpathians1-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-details-tour-carpathians-list-item:nth-child(2) {
+  background: url("/images/modal-tour-details/carpathians/mob/carpathians2-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/carpathians/mob/carpathians2-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-details-tour-carpathians-list-item:nth-child(3) {
+  background: url("/images/modal-tour-details/carpathians/mob/carpathians3-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/carpathians/mob/carpathians3-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-details-tour-carpathians-list-item:nth-child(4) {
+  background: url("/images/modal-tour-details/carpathians/mob/carpathians4-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/carpathians/mob/carpathians4-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-details-tour-carpathians-list-item:nth-child(5) {
+  background: url("/images/modal-tour-details/carpathians/mob/carpathians5-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/carpathians/mob/carpathians5-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-details-tour-carpathians-list-item:nth-child(6) {
+  background: url("/images/modal-tour-details/carpathians/mob/carpathians6-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/carpathians/mob/carpathians6-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-details-tour-carpathians-list-item:nth-child(7) {
+  background: url("/images/modal-tour-details/carpathians/mob/carpathians7-mob-1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("/images/modal-tour-details/carpathians/mob/carpathians7-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-details-tour-hoverla,
+.modal-details-tour-bukovel,
+.modal-details-tour-carpathians {
   background-color: $light-color;
 }
 
-.modal-details-tour-hoverla-list-item-day {
+.modal-details-tour-hoverla-list-item-day,
+.modal-details-tour-bukovel-list-item-day,
+.modal-details-tour-carpathians-list-item-day {
   position: absolute;
   top: 90px;
   left: 0;
@@ -69,25 +215,33 @@
   border-radius: 0px 8px 8px 0px;
 }
 
-.modal-details-tour-hoverla-sublist {
+.modal-details-tour-hoverla-sublist,
+.modal-details-tour-bukovel-sublist,
+.modal-details-tour-carpathians-sublist {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.modal-details-tour-hoverla-wrapper {
+.modal-details-tour-hoverla-wrapper,
+.modal-details-tour-bukovel-wrapper,
+.modal-details-tour-carpathians-wrapper {
   background-color: $light-color;
   padding: 28px 15px;
 }
 
-.modal-details-tour-hoverla-price {
+.modal-details-tour-hoverla-price,
+.modal-details-tour-bukovel-price,
+.modal-details-tour-carpathians-price {
   margin-bottom: 16px;
   color: $secondary-text;
   text-align: center;
   font-weight: 600;
 }
 
-.modal-details-tour-hoverla-btn {
+.modal-details-tour-hoverla-btn,
+.modal-details-tour-bukovel-btn,
+.modal-details-tour-carpathians-btn {
   width: 100%;
   display: block;
   padding: 10px;
@@ -99,12 +253,18 @@
   cursor: pointer;
 }
 
-.modal-details-tour-hoverla-btn {
+.modal-details-tour-hoverla-btn,
+.modal-details-tour-bukovel-btn,
+.modal-details-tour-carpathians-btn {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-details-tour-hoverla-btn:hover,
-.modal-details-tour-hoverla-btn:focus {
+.modal-details-tour-hoverla-btn:focus,
+.modal-details-tour-bukovel-btn:hover,
+.modal-details-tour-bukovel-btn:focus,
+.modal-details-tour-carpathians-btn:hover,
+.modal-details-tour-carpathians-btn:focus {
   background-color: $primary-text;
 }
 

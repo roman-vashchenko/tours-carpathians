@@ -1281,6 +1281,7 @@ body {
   transform: translate(-50%, -50%);
   width: 315px;
   z-index: 555;
+  background-color: #f7fbfb;
 }
 @media screen and (min-width: 768px) {
   .modal-details-tour-hoverla,
@@ -1294,6 +1295,20 @@ body {
   .modal-details-tour-bukovel,
   .modal-details-tour-carpathians {
     width: 1170px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-hoverla,
+  .modal-details-tour-bukovel,
+  .modal-details-tour-carpathians {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -1408,6 +1423,12 @@ body {
     background-image: url("/images/modal-tour-details/hoverla/desk/hoverla1-desk-2x.jpg");
   }
 }
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-hoverla-list-item:nth-child(1) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 .modal-details-tour-hoverla-list-item:nth-child(2) {
   background: url("/images/modal-tour-details/hoverla/mob/hoverla2-mob-1x.jpg");
@@ -1437,6 +1458,12 @@ body {
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .modal-details-tour-hoverla-list-item:nth-child(2) {
     background-image: url("/images/modal-tour-details/hoverla/desk/hoverla2-desk-2x.jpg");
+  }
+}
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-hoverla-list-item:nth-child(2) {
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -1470,6 +1497,12 @@ body {
     background-image: url("/images/modal-tour-details/hoverla/desk/hoverla3-desk-2x.jpg");
   }
 }
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-hoverla-list-item:nth-child(3) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 .modal-details-tour-bukovel-list-item:nth-child(1) {
   background: url("/images/modal-tour-details/bukovel/mob/bukovel1-mob-1x.jpg");
@@ -1499,6 +1532,12 @@ body {
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .modal-details-tour-bukovel-list-item:nth-child(1) {
     background-image: url("/images/modal-tour-details/bukovel/desk/bukovel1-desk-2x.jpg");
+  }
+}
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-bukovel-list-item:nth-child(1) {
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -1532,6 +1571,12 @@ body {
     background-image: url("/images/modal-tour-details/bukovel/desk/bukovel2-desk-2x.jpg");
   }
 }
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-bukovel-list-item:nth-child(2) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 .modal-details-tour-bukovel-list-item:nth-child(3) {
   background: url("/images/modal-tour-details/bukovel/mob/bukovel3-mob-1x.jpg");
@@ -1561,6 +1606,12 @@ body {
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .modal-details-tour-bukovel-list-item:nth-child(3) {
     background-image: url("/images/modal-tour-details/bukovel/desk/bukovel3-desk-2x.jpg");
+  }
+}
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-bukovel-list-item:nth-child(3) {
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -1594,6 +1645,12 @@ body {
     background-image: url("/images/modal-tour-details/bukovel/desk/bukovel4-desk-2x.jpg");
   }
 }
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-bukovel-list-item:nth-child(4) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 .modal-details-tour-carpathians-list-item:nth-child(1) {
   background: url("/images/modal-tour-details/carpathians/mob/carpathians1-mob-1x.jpg");
@@ -1623,6 +1680,12 @@ body {
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .modal-details-tour-carpathians-list-item:nth-child(1) {
     background-image: url("/images/modal-tour-details/carpathians/deskcarpathians1-desk-2x.jpg");
+  }
+}
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-carpathians-list-item:nth-child(1) {
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -1656,6 +1719,12 @@ body {
     background-image: url("/images/modal-tour-details/carpathians/deskcarpathians2-desk-2x.jpg");
   }
 }
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-carpathians-list-item:nth-child(2) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 .modal-details-tour-carpathians-list-item:nth-child(3) {
   background: url("/images/modal-tour-details/carpathians/mob/carpathians3-mob-1x.jpg");
@@ -1685,6 +1754,12 @@ body {
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .modal-details-tour-carpathians-list-item:nth-child(3) {
     background-image: url("/images/modal-tour-details/carpathians/deskcarpathians3-desk-2x.jpg");
+  }
+}
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-carpathians-list-item:nth-child(3) {
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -1718,6 +1793,12 @@ body {
     background-image: url("/images/modal-tour-details/carpathians/deskcarpathians4-desk-2x.jpg");
   }
 }
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-carpathians-list-item:nth-child(4) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 .modal-details-tour-carpathians-list-item:nth-child(5) {
   background: url("/images/modal-tour-details/carpathians/mob/carpathians5-mob-1x.jpg");
@@ -1747,6 +1828,12 @@ body {
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .modal-details-tour-carpathians-list-item:nth-child(5) {
     background-image: url("/images/modal-tour-details/carpathians/deskcarpathians5-desk-2x.jpg");
+  }
+}
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-carpathians-list-item:nth-child(5) {
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -1780,6 +1867,12 @@ body {
     background-image: url("/images/modal-tour-details/carpathians/deskcarpathians6-desk-2x.jpg");
   }
 }
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-carpathians-list-item:nth-child(6) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 .modal-details-tour-carpathians-list-item:nth-child(7) {
   background: url("/images/modal-tour-details/carpathians/mob/carpathians7-mob-1x.jpg");
@@ -1809,6 +1902,12 @@ body {
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .modal-details-tour-carpathians-list-item:nth-child(7) {
     background-image: url("/images/modal-tour-details/carpathians/deskcarpathians7-desk-2x.jpg");
+  }
+}
+@media screen and (min-width: 1440px) and (max-height: 1000px) {
+  .modal-details-tour-carpathians-list-item:nth-child(7) {
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

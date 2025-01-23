@@ -31,14 +31,14 @@ const refs = {
 
 // ====================================
 
-refs.openModalHoverla.addEventListener("click", hendleOpenModalHoverla);
-refs.closeModalHoverla.addEventListener("click", hendleCloseModalHoverla);
+refs.openModalHoverla.addEventListener("click", handleOpenModalHoverla);
+refs.closeModalHoverla.addEventListener("click", handleCloseModalHoverla);
 
 function handleKeydownEscapeForModalHoverla(e) {
-  if (e.key === "Escape") hendleCloseModalHoverla();
+  if (e.key === "Escape") handleCloseModalHoverla();
 }
 
-function hendleOpenModalHoverla() {
+function handleOpenModalHoverla() {
   refs.modalHoverla.classList.remove("is-hidden");
   document.body.style.overflow = "hidden";
   document.addEventListener("keydown", handleKeydownEscapeForModalHoverla);
@@ -47,11 +47,11 @@ function hendleOpenModalHoverla() {
       e.target.className ===
       "backdrop-modal-details-tour-hoverla js-modal-details-tour-hoverla"
     )
-      hendleCloseModalHoverla();
+      handleCloseModalHoverla();
   });
 }
 
-function hendleCloseModalHoverla() {
+function handleCloseModalHoverla() {
   refs.modalHoverla.classList.add("is-hidden");
   document.body.style.overflow = "";
   document.removeEventListener("keydown", handleKeydownEscapeForModalHoverla);
@@ -64,14 +64,14 @@ refs.bookTourHoverla.addEventListener("click", () => {
 
 // =======================================
 
-refs.openModalBukovel.addEventListener("click", hendleOpenModalBukovel);
-refs.closeModalBukovel.addEventListener("click", hendleCloseModalBukovel);
+refs.openModalBukovel.addEventListener("click", handleOpenModalBukovel);
+refs.closeModalBukovel.addEventListener("click", handleCloseModalBukovel);
 
 function handleKeydownEscapeForModalBukovel(e) {
-  if (e.key === "Escape") hendleCloseModalBukovel();
+  if (e.key === "Escape") handleCloseModalBukovel();
 }
 
-function hendleOpenModalBukovel() {
+function handleOpenModalBukovel() {
   refs.modalBukovel.classList.remove("is-hidden");
   document.body.style.overflow = "hidden";
   document.addEventListener("keydown", handleKeydownEscapeForModalBukovel);
@@ -80,11 +80,11 @@ function hendleOpenModalBukovel() {
       e.target.className ===
       "backdrop-modal-details-tour-bukovel js-modal-details-tour-bukovel"
     )
-      hendleCloseModalBukovel();
+      handleCloseModalBukovel();
   });
 }
 
-function hendleCloseModalBukovel() {
+function handleCloseModalBukovel() {
   refs.modalBukovel.classList.add("is-hidden");
   document.body.style.overflow = "";
   document.removeEventListener("keydown", handleKeydownEscapeForModalBukovel);
@@ -97,17 +97,17 @@ refs.bookTourBukovel.addEventListener("click", () => {
 
 // =======================================
 
-refs.openModalCarpathians.addEventListener("click", hendleOpenModalCarpathians);
+refs.openModalCarpathians.addEventListener("click", handleOpenModalCarpathians);
 refs.closeModalCarpathians.addEventListener(
   "click",
-  hendleCloseModalCarpathians
+  handleCloseModalCarpathians
 );
 
 function handleKeydownEscapeForModalCarpathians(e) {
-  if (e.key === "Escape") hendleCloseModalCarpathians();
+  if (e.key === "Escape") handleCloseModalCarpathians();
 }
 
-function hendleOpenModalCarpathians() {
+function handleOpenModalCarpathians() {
   refs.modalCarpathians.classList.remove("is-hidden");
   document.body.style.overflow = "hidden";
   document.addEventListener("keydown", handleKeydownEscapeForModalCarpathians);
@@ -116,11 +116,11 @@ function hendleOpenModalCarpathians() {
       e.target.className ===
       "backdrop-modal-details-tour-carpathians js-modal-details-tour-carpathians"
     )
-      hendleCloseModalCarpathians();
+      handleCloseModalCarpathians();
   });
 }
 
-function hendleCloseModalCarpathians(e) {
+function handleCloseModalCarpathians(e) {
   refs.modalCarpathians.classList.add("is-hidden");
   document.body.style.overflow = "";
   document.removeEventListener(
